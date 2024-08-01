@@ -14,11 +14,11 @@ async function searchclick(){
     list.innerHTML=""
     const search=input.value
     try {
-        const response=await fetch(`http://www.omdbapi.com/?apikey=7704dd86&s=${search}&page=1`)
+        const response=await fetch(`https://www.omdbapi.com/?apikey=7704dd86&s=${search}&page=1`)
         const data=await response.json()
         for(let i=0;i<5;i++){
             try {
-                const response2=await fetch(`http://www.omdbapi.com/?apikey=7704dd86&i=${data.Search[i].imdbID}&plot=short`)
+                const response2=await fetch(`https://www.omdbapi.com/?apikey=7704dd86&i=${data.Search[i].imdbID}&plot=short`)
                 const data2=await response2.json()
                 const ListItem=document.createElement('li')
                 ListItem.innerHTML=`
