@@ -80,3 +80,6 @@ li:hover .movie_back{
 .movie_back {
     transform: rotateY(180deg);
 }
+.movie_back h2{
+    text-align: center;
+}
