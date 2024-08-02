@@ -83,3 +83,11 @@ li:hover .movie_back{
 .movie_back h2{
     text-align: center;
 }
+header img{
+    height: 32px;
+}
+.header{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
