@@ -45,3 +45,158 @@ async function searchclick(){
     }
 }
 
+const top10list=document.querySelector('.top10 ul')
+
+async function topten(){
+    try {
+        const response =await fetch(`http://www.omdbapi.com/?apikey=7704dd86&t=Deadpool & Wolverine`)
+        const data =await response.json()
+        const ListItem=document.createElement('li')
+        ListItem.innerHTML=`
+                    <img src="${data.Poster}" alt="">
+                    <h2>${data.Title}(${data.Year})</h2>
+                    <p>${data.Plot}</p>
+        `
+        top10list.appendChild(ListItem)
+    } catch (error) {
+        console.error();
+        
+    }
+    try {
+        const response =await fetch(`http://www.omdbapi.com/?apikey=7704dd86&t=House of the Dragon`)
+        const data =await response.json()
+        const ListItem=document.createElement('li')
+        ListItem.innerHTML=`
+                    <img src="${data.Poster}" alt="">
+                    <h2>${data.Title}(${data.Year})</h2>
+                    <p>${data.Plot}</p>
+        `
+        top10list.appendChild(ListItem)
+    } catch (error) {
+        console.error();
+        
+    }
+
+    try {
+        const response =await fetch(`http://www.omdbapi.com/?apikey=7704dd86&t=Twisters`)
+        const data =await response.json()
+        const ListItem=document.createElement('li')
+        ListItem.innerHTML=`
+                    <img src="${data.Poster}" alt="">
+                    <h2>${data.Title}(${data.Year})</h2>
+                    <p>${data.Plot}</p>
+        `
+        top10list.appendChild(ListItem)
+    } catch (error) {
+        console.error();
+        
+    }
+
+    try {
+        const response =await fetch(`http://www.omdbapi.com/?apikey=7704dd86&t= The Boys`)
+        const data =await response.json()
+        const ListItem=document.createElement('li')
+        ListItem.innerHTML=`
+                    <img src="${data.Poster}" alt="">
+                    <h2>${data.Title}(${data.Year})</h2>
+                    <p>${data.Plot}</p>
+        `
+        top10list.appendChild(ListItem)
+    } catch (error) {
+        console.error();
+        
+    }
+
+    try {
+        const response =await fetch(`http://www.omdbapi.com/?apikey=7704dd86&t= Longlegs`)
+        const data =await response.json()
+        const ListItem=document.createElement('li')
+        ListItem.innerHTML=`
+                    <img src="${data.Poster}" alt="">
+                    <h2>${data.Title}(${data.Year})</h2>
+                    <p>${data.Plot}</p>
+        `
+        top10list.appendChild(ListItem)
+    } catch (error) {
+        console.error();
+        
+    }
+
+    try {
+        const response =await fetch(`http://www.omdbapi.com/?apikey=7704dd86&t= Presumed Innocent`)
+        const data =await response.json()
+        const ListItem=document.createElement('li')
+        ListItem.innerHTML=`
+                    <img src="${data.Poster}" alt="">
+                    <h2>${data.Title}(${data.Year})</h2>
+                    <p>${data.Plot}</p>
+        `
+        top10list.appendChild(ListItem)
+    } catch (error) {
+        console.error();
+        
+    }
+
+    try {
+        const response =await fetch(`http://www.omdbapi.com/?apikey=7704dd86&t= Avengers`)
+        const data =await response.json()
+        const ListItem=document.createElement('li')
+        ListItem.innerHTML=`
+                    <img src="${data.Poster}" alt="">
+                    <h2>${data.Title}(${data.Year})</h2>
+                    <p>${data.Plot}</p>
+        `
+        top10list.appendChild(ListItem)
+    } catch (error) {
+        console.error();
+        
+    }
+
+    try {
+        const response =await fetch(`http://www.omdbapi.com/?apikey=7704dd86&t= The Bear`)
+        const data =await response.json()
+        const ListItem=document.createElement('li')
+        ListItem.innerHTML=`
+                    <img src="${data.Poster}" alt="">
+                    <h2>${data.Title}(${data.Year})</h2>
+                    <p>${data.Plot}</p>
+        `
+        top10list.appendChild(ListItem)
+    } catch (error) {
+        console.error();
+        
+    }
+
+    try {
+        const response =await fetch(`http://www.omdbapi.com/?apikey=7704dd86&t= Cobra Kai`)
+        const data =await response.json()
+        const ListItem=document.createElement('li')
+        ListItem.innerHTML=`
+                    <img src="${data.Poster}" alt="">
+                    <h2>${data.Title}(${data.Year})</h2>
+                    <p>${data.Plot}</p>
+        `
+        top10list.appendChild(ListItem)
+    } catch (error) {
+        console.error();
+        
+    }
+
+
+    try {
+        const response =await fetch(`http://www.omdbapi.com/?apikey=7704dd86&t=Game of Thrones`)
+        const data =await response.json()
+        const ListItem=document.createElement('li')
+        ListItem.innerHTML=`
+                    <img src="${data.Poster}" alt="">
+                    <h2>${data.Title}(${data.Year})</h2>
+                    <p>${data.Plot}</p>
+        `
+        top10list.appendChild(ListItem)
+    } catch (error) {
+        console.error();
+        
+    }
+
+}
+document.addEventListener('DOMContentLoaded',topten)

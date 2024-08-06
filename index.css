@@ -30,7 +30,7 @@ body{
     background-color: black;
     color: white;
 }
-ul{
+.search_result ul{
     display: flex;
     align-items: center;
     list-style: none;
@@ -38,7 +38,7 @@ ul{
     justify-content: space-between;
     margin-top: 50px;
 }
-li{
+.search_result li{
     width:18%;
     height: 1000px;
     display: flex;
@@ -54,14 +54,14 @@ li{
     justify-content: center;
     width: 100%;
 }
-li p{
+.search_result li p{
     margin: 10px+0;
     text-align: center;
 }
-li:hover .movie_front{
+.search_result li:hover .movie_front{
     transform: rotateY(180deg);
 }
-li:hover .movie_back{
+.search_result li:hover .movie_back{
     transform: rotateY(0deg);
 }
 
@@ -90,4 +90,21 @@ header img{
     width: 80%;
     display: flex;
     justify-content: space-between;
+}
+.top10{
+    display: flex;
+    margin-top: 25px;
+    justify-content: center;
+}
+.top10 ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 80%;
+}
+.top10 li{
+    width: 9%;
+}
+.top10 li img{
+    width: 100%;
 }
